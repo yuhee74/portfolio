@@ -1,0 +1,260 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contact</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../js/jquery.bxslider.min.js"></script>
+<script>
+$(function(){
+	$("#gnb>li").mouseover(function(){
+		$(this).children(".dp2").stop().slideDown();
+	});
+<!--마우스내렸을때-->
+	$("#gnb>li").mouseout(function(){
+		$(this).children(".dp2").stop().slideUp();
+	});
+	
+		
+	$('#question>li>ul').hide();
+		$('.mainmenu').click(function(){
+			$('#question>li>ul').slideUp();
+			$(this).next().slideDown();
+		});
+});
+</script>
+
+<link rel="shortcut icon" href="../images/baby_favicon.ico">
+
+<link href="../css/bootstrap.min.css" rel="stylesheet"><!-- 부트스트랩 -->
+<link href="../css/jquery.mmenu.all.css" rel="stylesheet">
+<link href="../css/sub.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div id="top">
+	<div class="container">
+    <div class="row">
+    	<ul class="sns col-md-6" >
+        	<li><a href="#"><img src="../images/icon_insta.png" alt="인스타그램"></a></li>
+            <li><a href="#"><img src="../images/icon_face.png" alt="페이스북"></a></li>
+            <li><a href="#"><img src="../images/icon_twitter.png" alt="트위터"></a></li>
+        </ul>
+        <div class="col-md-6">
+        <ul class="util">
+        	<li><a href="#">Cart</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+        </div><!--col-md-6 e-->
+        </div><!--row e-->
+        </div><!--container e-->
+</div><!--top e-->
+
+<div id="header" class="container-fluid">
+	<div class="container">
+    <div class="row">
+    
+   <h1><a href="../main.html">My baby</a></h1>
+    
+            <div class="mgnb col-xs-6">
+            <p><a href="#menu"><img src="../images/menu.png" alt="메뉴보기"></a></p>
+            <nav id="menu">
+            
+            <ul>
+            <li><a href="#">Brand Story</a>
+                <ul>
+                    <li><a href="#">My baby?</a></li>
+                    <li><a href="#">Story</a></li>
+                </ul>
+             </li>
+             <li><a href="#">Cosmetics</a>
+                    <ul>
+                        <li><a href="#">Natural Cosmetic</a></li>
+                        <li><a href="#">Shop</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Article</a>
+                    <ul>
+                        <li><a href="#">침구</a></li>
+                        <li><a href="#">옷</a></li>
+                        <li><a href="#">분유</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                </li>
+            </ul>
+            </nav><!--menu e-->
+            </div><!--mgnb e-->
+
+    
+    <ul id="gnb">
+    	<li><a href="story.html">Brand Story</a>
+        	<ul class="dp2">
+            	<li><a href="#">My baby?</a></li>
+                <li><a href="#">Story</a></li>
+            </ul>
+        </li>
+        <li><a href="cosm.html">Cosmetics</a>
+        	<ul class="dp2">
+            	<li><a href="#">Natural Cosmetic</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
+        </li>
+        <li><a href="arti.html">Article</a>
+        	<ul class="dp2">
+            	<li><a href="#">침구</a></li>
+                <li><a href="#">옷</a></li>
+                <li><a href="#">분유</a></li>
+            </ul>
+        </li>
+        <li><a href="contact.html">Contact</a>
+        	<ul class="dp2">
+            	<li><a href="#">FAQ</a></li>
+                <li><a href="#">공지사항</a></li>
+            </ul>
+        </li>
+    </ul>
+   </div><!--row e-->
+   </div><!--container e-->
+</div><!--header e-->
+
+<div id="sub4_contents">
+ <div id="tree" class="container-fluid">
+ <div class="container">
+ <div class="row">
+    
+    <h1 class="col-md-12">자주하는 질문</h1>
+    <div class="col-md-12">
+    <ul id="question">
+	<li><div class="mainmenu">배송기간은 얼마나 걸리나요?</div>
+    	<ul id="answer">
+        	<li>구입하신 제품은 결제완료 시점으로부터 영업일 기준 2~3일 이내에 받아보실 수 있습니다.<br>평일 오후 1시 이전 결제 완료 건은 당일출고됩니다.</li>
+        </ul>
+    </li>
+    <li><div class="mainmenu">현금 영수증 발급은 어떻게 하나요?</div>
+    	<ul id="answer">
+        	<li>현금 영수증 발급은 결제 수단 중 무통장입금과 실시간 계좌이체 선택 시 가능합니다.<br>주문/결제창에서 결제방법선택, 현금여우증 신청 클릭 후 번호를 입력해주시면 자동으로 발급됩니다.</li>
+        </ul>
+    </li>
+    <li><div class="mainmenu">구입한 상품의 교환/반품/주문취소/환불은 어떻게 하나요?</div>
+    	<ul id="answer">
+        	<li>구입한 상품의 교환/반품/주문취소/환불은<br> 
+[인터넷 사이버몰 이용표준약관 제 14저 환급, 반품 및 교환 규정]에 의거하여 구매하신 후<br>
+7일 이내에 요청하실 경우만 가능합니다.</li>
+        </ul>
+    </li>
+    <li><div class="mainmenu">주문한 내역 및 배송상태는 어디서 확인이 가능한가요?</div>
+    	<ul id="answer">
+        	<li>로그인 후 마이페이지에서 주문 및 배송상태를 조회 하실 수 있습니다.<br>주문내역에서 각 주문번호의 처리상태 및 가장 우측 송장번호로 배송 상태 조회가 가능합니다.</li>
+        </ul>
+    </li>
+</ul>
+	</div>
+	</div><!--row e-->
+	</div><!--container e-->
+    </div><!--tree e-->
+
+
+	<div id="faq" class="container-fluid">
+    	<div class="container">
+        <div class="row">
+    	<h1 class="col-md-12">FAQ</h1>
+    	<table class="col-md-12">
+            <tr>
+            	<th>답변상태</th>
+                <th>제목</th>
+                <th>작성자</th>
+                <th>작성일</th>
+            </tr>
+            
+            <tr>
+            	<td>답변대기</td>
+                <td><a href="#">화장품의 사용 기한이 궁급합니다.</a></td>
+                <td>gf******</td>
+                <td>2019.02.25</td>
+            </tr>
+            <tr>
+            	<td>답변완료</td>
+                <td><a href="#">마이 베이비는 인공 향료를 첨가하나요?</a></td>
+                <td>nh******</td>
+                <td>2019.02.22</td>
+            </tr>
+            <tr>
+            	<td>답변완료</td>
+                <td><a href="#">전 성분에 화학성분이랑 비슷한 이름이 있는데, 유해 화학성분이 0%인가요?</a></td>
+                <td>fs******</td>
+                <td>2019.02.04</td>
+            </tr>
+            <tr>
+            	<td>답변완료</td>
+                <td><a href="#">회원가입을 하지않고, 비회원으로 주문이 가능한가요?</a></td>
+                <td>zg******</td>
+                <td>2019.02.04</td>
+            </tr>
+            <tr>
+            	<td>답변완료</td>
+                <td><a href="#">선물 포장이 가능한가요?</a></td>
+                <td>by******</td>
+                <td>2019.02.03</td>
+            </tr>
+            <tr>
+            	<td>답변완료</td>
+                <td><a href="#">주문을 잘못해서 취소하고싶어요...</a></td>
+                <td>as******</td>
+                <td>2019.02.03</td>
+            </tr>
+            <tr>
+            	<td>답변완료</td>
+                <td><a href="#">회원정보를 변경하고 싶어요.</a></td>
+                <td>ff******</td>
+                <td>2019.02.02</td>
+            </tr>
+        </table>
+        
+<p class="input"><input type="button" value="작성하기"></p>
+    
+        </div><!--row e-->
+    </div><!--container e-->
+    </div><!--faq e-->
+</div><!--sub4_contents e-->
+
+<div id="footer" class="container-fluid">
+	<div class="container">
+    <div class="row">
+    
+	<div id="footer_inner">
+    	<div class="link"><p class="col-md-8">
+        	<a href="#">마이베이비 소개</a>
+            <a href="#">이용약관</a>
+            <a href="#">개인정보취급방침</a>
+            <a href="#">이용안내</a>
+            <a href="#">비밀번호안심쇼핑몰</a>
+            <a href="#">고객서비스센터</a>
+      </p></div><!--link e-->
+        
+        <p class="address col-md-9">주식회사 (주)마이베이비 사업자정보확인 : 최유희 사업장소재지 123-123 부산광역시 남포구 무슨동 12-3 8층<br>
+사업자등록번호 123-45-6789  통신판매업신고번호 제 2010-부산남포-9876호  개인정보관리책임자 : 최유희<br>
+고객상담 080-619-8888     이메일 : mybabymall@mybaby.com     호스팅제공자 : (주)마이베이비<br>
+저희 쇼핑물은 고객님의 안전거래를 위해 무통장입금 거래에 대해 (주)KG이니시스의 INPAY에 에스크로 구매 안전 서비스를 적용하고 있습니다.     서비스 가입사실 확인
+        </p>
+        
+        <p class="copy col-md-8">Copyright ⓒ 2019 Mybaby All rights reserved</p>
+        
+        <p class="footer_logo col-md-2"><img src="../images/footer_logo.png" alt="마이베이비 로고"></p>
+        
+        </div><!--footer_inner e-->
+        </div><!--row e-->
+    </div><!--container e-->
+</div><!--footer e-->
+
+</body>
+</html>

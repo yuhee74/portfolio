@@ -1,0 +1,207 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*여백 초기화 */
+* {margin:0; padding:0; }
+
+/* 목록 초기화 */
+ol,ul { list-style:none; }
+
+/*하이퍼링크 설정 */
+a:link { text-decoration:none; color:#000; }/*기본값*/
+a:visited { text-decoration:none; color:#000; }/*한번이상 클릭한 링크요소*/
+a:hover { text-decoration:none; color:#000; }/*마우스 올린상태*/
+a:active { text-decoration:none; color:#000; }	
+
+body{ font-family:"나눔고딕"; font-size:14px; line-height:24px; color:#3b220f; }
+
+#top { background:#3b220f; }
+#top  { height:40px; position:relative; }
+#top .sns { padding-top:6px; }
+#top .sns li { float:left; padding-left:15px; }
+#top .util { float:right; padding-top:8px; }
+#top .util li { float:right; padding-right:15px; }
+#top .util li a { display:block; color:#fff; font-weight:500; font-size:11px; }
+
+@media screen and (max-width:768px) {
+	#top { display:none; }
+}
+
+@keyframes logo_ani {
+	0% { background:url(../images/header_logo.png) no-repeat center top; }
+	40% { background:url(../images/header_logo.png) no-repeat center top; }
+	50% { background:url(../images/logo_ver.png) no-repeat center top; }
+	90% { background:url(../images//logo_ver.png) no-repeat center top; }
+	100% { background:url(../images/header_logo.png) no-repeat center top; }
+}
+
+#header { height:165px; border-bottom:2px solid #3b220f; }
+#header h1 { margin:35px auto; width:150px; height:80px; animation:logo_ani 10s infinite; background:url(../images/header_logo.png)no-repeat center top; } 
+#header h1 a { display:block; text-indent:-9999px; }
+
+#header #gnb { width:700px; margin:-25px auto; }
+#header #gnb>li { float: left; width:25%; position:relative; }
+#header #gnb>li>a { display:block; font-size:22px; font-weight:500; text-align:center; padding:5px 0; }
+#header #gnb>li:hover a { color:#f26800; }
+
+#header #gnb li .dp2 { display:none; z-index:999; position:absolute; top:38px; width:100%; }
+#header #gnb li .dp2 li a { display:block; padding:12px 0; text-align:center; border-top:1px solid #e1b89a; background:#fff5e6; color:#3b220f; font-size:15px; font-weight:400; }
+#header #gnb li .dp2 li a:hover { background:#825736; color:#fff; }
+
+@media screen and (min-width:1025px) {
+	.mgnb { display:none; }
+}
+@media screen and (min-width:769px) and (max-width:1024px) {
+	.mgnb { display:block; }
+	.mgnb p { text-align:right; padding-top:30px; }
+	#gnb { display:none; }
+}
+@media screen and (max-width:768px) {
+	.mgnb { display:block; }
+	.mgnb p { text-align:right; padding-top:30px; }
+	#gnb { display:none; }
+}
+
+
+/*=================================================================================================================*/
+
+#main { position:relative; z-index:-5; }
+#main h1 { font-family: 'Abril Fatface', cursive; font-size:40px; font-style:italic; color:#fff; position:absolute; left:50%; margin-left:-115px; padding-top:300px;  z-index:5;}
+#main .main_visual { width:1920px; height:658px; margin:0 auto; }
+
+.main_visual .bx-prev, #main_visual .bx-next { visibility:hidden; }
+.main_visual .bx-pager { position:absolute; bottom:30px; left:50%; margin-left:-30px; }
+.main_visual .bx-pager-item { float:left; }
+.main_visual .bx-pager a { display:block; border-radius:50%; width:10px; height:10px; background:#3b220f; text-indent:-99999px; margin:0 5px; }
+.main_visual .bx-pager a.active { background:#fff5eb; }
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+	#visual { height:500px; }
+	.main_banner li { height:550px; background-size:cover; }
+}
+
+@media screen and (max-width:768px) {
+	#visual { height:200px; }
+	.main_banner li { height:200px; background-size:cover; position:relative; }
+	.bx-next,.bx-prev { display:none; }
+}
+
+
+
+/*=======Brand story==============================================================*/
+
+#brand_main { width:100%; height:544px; margin-bottom:80px; background:url(../images/sub_main_visual.jpg) no-repeat center top; }
+#brand_main h2 { font-family: 'Abril Fatface', cursive; font-size:30px; color:#fff; text-align:center; padding-top:200px; margin-top:0px; }
+#brand_main .sub_desc { color:#fff; text-align:center; font-size:13px; line-height:22px; padding-top:20px; }
+
+
+#inner_sub_contents { position:relative; }
+#inner_sub_contents .story_desc { text-align:center; font-size:18px; margin-top:30px; font-weight:500; }
+#inner_sub_contents dl { padding-top:60px; margin-bottom:130px; }
+#inner_sub_contents dl dt { text-align:center; padding-bottom:20px; }
+#inner_sub_contents dl dd { text-align:center; color:#616161; font-size:12px; line-height:20px; padding-bottom:10px;  } 
+#inner_sub_contents dl dd span { font-family: 'Abril Fatface', cursive; font-size:25px; color:#3b220f; font-style:italic; } 
+
+
+#sub_contents #desc { position:relative; }
+#sub_contents #desc .story_img { float:left; margin-bottom:110px; }
+#sub_contents #desc .bg_color { height:235px; background:#fff4e5; position:absolute; top:30px; z-index:-999; }
+#sub_contents #desc .desc_txt1 { float:right; top:10px; font-size:23px; font-weight:bold; }
+#sub_contents #desc .desc_txt2 { float:right; top:30px;}
+#sub_contents #desc .desc_txt2 span { font-size:20px; font-weight:bold; }
+
+
+@media screen and (max-width:768px) {
+	
+	#inner_sub_contents { width:100%; height:450px;  }
+	.bg_color { width:360px; height:235px; }
+}
+
+
+/*=========Cosmetic=================================================================*/
+
+#cos_main { width:100%; height:544px; background:url(../images/sub2_main_visual.jpg) no-repeat center top; padding-bottom:650px; }
+#cos_main p { padding-top:370px; font-size:20px; color:#fff; line-height:27px; font-weight:500; text-align:center; text-shadow:2px 2px 2px #333; }
+
+#sub2_contents h1 { text-align:center; margin-top:100px; font-family: 'Abril Fatface', cursive; font-style:italic; font-size:30px;  }
+#sub2_contents p { text-align:center; margin:25px 0 65px; color:#616161; }
+#sub2_contents dl { text-align:center; }
+#sub2_contents dl dt { margin-bottom:15px; }
+#sub2_contents dd span { font-family: 'Abril Fatface', cursive; font-style:italic; color: #3b220f; font-size:20px;}
+#sub2_contents dd { color:#3e3e3e; margin-top:7px; }
+
+#inner_cosmetic .cos_img1 { float:left; margin-top:80px; }
+#inner_cosmetic .cos_img2 { float:right; }
+#inner_cosmetic .cos_txt { float:right; margin-top:120px; font-size:15px; text-align:left; }
+#inner_cosmetic .cos_txt span { font-weight:500; font-size:18px; }
+#inner_cosmetic .cos_txt2 { float:left; font-size:15px; text-align:right; }
+#inner_cosmetic .cos_txt2 span { font-weight:500; font-size:18px; }
+
+@media screen and (max-width:768px) {
+	
+}
+
+
+/*==========================================================================*/
+
+
+
+#sub3_contents h1 { text-align:center; padding:40px 0; }
+.click_list { width:300px; margin:0 auto; }
+.click_list li { float:left; }
+.click_list li a { display:block; font-size:15px; text-align:center; padding-right:10px; margin-bottom:30px; }
+.click_list li a.on { font-weight:bold; }
+
+.list { clear:both; }
+.list dl { }
+.list dt { text-align:center; padding:10px 0;   }
+.list dd { text-align:center; font-weight:bold; padding-top:20px; border-top:1px solid #ccc; }
+
+@media screen and (max-width:768px) {
+	.click_list { width:30%; }
+	.list { }
+	.list dl{ width:100%; }
+}
+
+
+/*============================================================*/
+
+
+#sub4_contents #faq { }
+#sub4_contents #faq h1{ text-align:center; padding:50px 0; }
+#faq table { text-align:center; }
+#faq table th { background:#ccc; padding:10px 0; text-align:center; }
+#faq table td { padding:6px 0; border-bottom:1px solid #ccc; font-size:12px; }
+#faq table td:nth-child(2) { font-size:13px; }
+
+.input { float:right; padding-top:5px; }
+input { background:#5f3a1e; border:0; color:#FFF; display:inline-block; padding:5px 20px; }
+
+
+#tree h1 { text-align:center; margin-top:60px; padding-bottom:80px; }
+#tree #question { width:600px; margin:0 auto; }
+#tree #question>li { margin-bottom:1px; }
+#tree #question .mainmenu { display:block; background:#5f3a1e; padding:5px 30px; font-weight:bold; color:#fff; padding:10px 20px; cursor:pointer; }
+#tree #question .mainmenu:hover { background:#98653f; }
+#answer li { display:block; background:#e6d4c6; padding:10px 30px; font-size:12px; border-bottom:1px solid #fff; }
+
+
+
+
+
+/*=================================================================================================================*/
+
+#footer { background:#3b220f; height:330px; box-sizing:border-box; margin-top:100px; }
+#footer_inner .link { padding-top:50px; }
+#footer_inner .link a { float:left; padding-right:20px; margin-left:15px; display:block;  font-size:12px; font-weight:bold; color:#fff; }
+#footer_inner .address { color:#d9d9d9; padding-top:20px; font-size:12px; line-height:20px; }
+#footer_inner .copy { color:#c2c2c2; font-size:11px; }
+#footer_inner .footer_logo { float:right; margin-top:-140px;}
+
+@media screen and (max-width:768px) {
+	#footer { text-align:center; height:400px; }	
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+	
+}
