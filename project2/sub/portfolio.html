@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Portfolio</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../css/jquery.waypoints.min.js"></script>
+
+<link rel="shortcut icon" href="../images/project_favicon.ico">
+<link href="../css/main.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="../css/animate.css">
+</head>
+
+<body>
+
+<div id="header">
+	<div class="header_inner">
+		<h1><a href="../main.html"><img src="../images/logo.png" alt="광고공사 로고"></a></h1>
+
+		<ul class="gnb">
+			<li><a href="../main.html">HOME</a></li>
+			<li><a href="portfolio.html">PORTFOLIO</a></li>
+			<li><a href="contact.html">CONTACT</a></li>
+		</ul>
+	</div>
+</div><!--header e-->
+
+<div id="port_main">
+	<div class="sub1_visual">
+	
+		<h1>PORTFOLIO</h1>
+		<p>Project outdoor advertising portfolio</p>
+		<p class="scroll"><img src="../images/scroll.png" alt="스크롤"></p>
+	</div><!--sub1_visual e-->
+</div><!--port_main e-->
+
+<div id="contents">
+	<div id="process">
+		<h1>Process</h1>
+		<p class="pro1">Project outdoor advertising process</p>
+		
+		<dl class="process1">
+			<dt><img src="../images/icon_client.png" alt="클라이언트 픽토그램"></dt>
+			<dd class="pro2">Client</dd>
+			<dd>전화(방문)상담<br>요구사항</dd>
+		</dl>
+		<dl>
+			<dt><img src="../images/icon_soultion.png" alt="해결책 픽토그램"></dt>
+			<dd class="pro3">Soultion</dd>
+			<dd>브랜드 전략<br>컨셉 설정<br>브랜드 디자인</dd>
+		</dl>
+		<dl class="process1">
+			<dt><img src="../images/icon_process.png" alt="과정 픽토그램"></dt>
+			<dd class="pro4">Process</dd>
+			<dd>브랜드 관리<br>마케팅<br>콘텐츠 기획<br>인테리어 디자인<br>영상 디자인</dd>
+		</dl>
+		
+		<div class="pro_bg1">1</div>
+		<div class="pro_bg2">1</div>
+		<div class="pro_bg3">1</div>
+		
+		<ul>
+			<li>광고기획</li>
+			<li>디자인</li>
+			<li>제작</li>
+			<li>시공</li>
+			<li>감리</li>
+		</ul>
+		
+	</div><!--process e-->
+	
+	<div id="portfolio">
+		<div class="port_inner">
+			<ul class="port_click">
+				<li><a href="#">ALL</a></li>
+				<li><a href="#">옥외광고</a></li>
+				<li><a href="#">시각디자인</a></li>
+				<li><a href="#">공간디자인</a></li>
+			</ul>
+			<p class="click_bg">1</p>
+			
+			<ul class="photo">
+				<li><a href="#"><img src="../images/img_emart.jpg" alt="이마트 옥외광고 사진"></a></li>
+				<li><a href="#"><img src="../images/img_novotel.jpg" alt="노보텔호텔 옥외광고 사진"></a></li>
+				<li><a href="#"><img src="../images/img_sin.jpg" alt="유기농 신시 옥외광고 사진"></a></li>
+				<li><a href="#"><img src="../images/img_book.jpg" alt="책 편집디자인 사진"></a></li>
+				<li><a href="#"><img src="../images/img_book2.jpg" alt="책 편집디자인 사진"></a></li>
+			</ul>
+            
+            <p class="btn01"><img src="../images/btn01.png" alt=""></p>
+            <p class="btn02"><img src="../images/btn02.png" alt=""></p>
+            
+		</div><!--port_inner e-->
+	</div><!--portfolio e-->
+</div><!--contents e-->
+
+<div id="footer">
+	<div id="footer_inner">
+    	<ul class="link">
+        	<li><a href="#">광고공사프로젝트 소개</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보취급방침</a></li>
+            <li><a href="#">이용안내</a></li>
+            <li><a href="#">고객서비스센터</a></li>
+        </ul>
+        
+        <p class="address">주식회사 (주)광고공사프로젝트 사업자정보확인 : 홍길동 사업장소재지 123-123 부산광역시 북구 덕천동 110-2<br>
+사업자등록번호 123-45-6789  통신판매업신고번호 제 2010-부산남포-9876호  개인정보관리책임자 : 홍길동<br>
+고객상담 080-619-8888     이메일 : project01l@project.com     호스팅제공자 : (주)광고공사프로젝트<br>
+저희 광고공사는 고객님의 안전거래를 위해 무통장입금 거래에 대해 (주)KG이니시스의 INPAY에 에스크로 구매 안전 서비스를 적용하고 있습니다.     서비스 가입사실 확인
+        </p>
+        
+        <p class="copy">Copyright ⓒ 2019 Mybaby All rights reserved</p>
+        
+        <p class="footer_logo"><img src="../images/logo.png" alt="광고공사프로젝트 로고"></p>
+    </div><!--footer_inner e-->
+	</div><!--footer e-->
+    
+<script>
+	$('.sub1_visual>.scroll').waypoint(function() {
+    $('.sub1_visual>.scroll').addClass('animated fadeInDown');
+}, { offset: '100%' });
+
+</script>
+</body>
+</html>
